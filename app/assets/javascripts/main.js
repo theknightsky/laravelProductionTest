@@ -22,7 +22,7 @@ app.factory('Portfolio', ['$http', function ($http){
             return $http.get('/api/portfolioItems');
         },
         getSingle: function(name) {
-            return $http.get('/api/portfolioItems/' + name);
+            return $http.get('../api/portfolioItems/' + name);
         }
     };
 }]);
@@ -33,6 +33,12 @@ app.controller('mainCtrl', ['$scope','Portfolio', function ($scope, Portfolio){
         $scope.portfolioItems = data;
 
         console.log($scope.portfolioItems);
+    });
+
+    Portfolio.getSingle().success(function(data){
+        $scope.portfolioItem = data;
+
+        console.log($scope.portfolioItem);
     });
 
 }]);
