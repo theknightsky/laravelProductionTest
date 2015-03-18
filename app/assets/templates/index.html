@@ -7,12 +7,12 @@
 </head>
 <body ng-app="app" ng-controller="mainCtrl">
   <div class="box"></div>
-  <div ng-repeat="item in portfolioItems">
+  <div ng-repeat="item in portfolioItems track by $index">
     <ul>
       <li>
         <h1>{{item.title}}</h1>
         <p>{{item.description}}</p>
-        <p ng-repeat="resource in item.resources.split(',') track by $index">{{resource}}</p>
+        <p ng-repeat="resource in item.resources.split(',')">{{resource}}</p>
       </li>
     </ul>
   </div>
