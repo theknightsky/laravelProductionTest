@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title Test page
+
+    link(rel="stylesheet", href="assets/final.css")
+body(ng-app="app" ng-controller="mainCtrl")
+    .box
+    div(ng-repeat="item in portfolioItems")
+        ul
+            li
+                h1 {{item.title}}
+                p {{item.description}}
+                p(ng-repeat="resource in item.resources.split(',')")
+                    {{resource}}
+    H1 Hello!
+    p  
+        | Lorem ipsum dolor sit amet, consectetur
+        | adipisicing elit. Impedit minus neque expedita 
+        | qui consectetur natus! Ut accusamus illum, quasi 
+        | laboriosam debitis qui asperiores sit tempore commodi, 
+        | incidunt, nam impedit sapiente.
+    
+    //- script(src="assets/angular.js")
+    //- script(src="assets/angular-ui-router.js")
+    //- script(src="assets/angular-animate.js")
+    script(src="assets/final.js")
