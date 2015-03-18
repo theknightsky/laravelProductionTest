@@ -19,8 +19,14 @@ class PortfolioItemsTableSeeder extends Seeder {
 		// }
 
         PortfolioItem::create(array(
-            'title' => 'Passkeep',
-            'description' => '  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt neque nisi nobis nemo, fugit cupiditate tempora incidunt magnam aperiam quidem consequatur, in repellendus molestiae vel est accusamus aut aspernatur, commodi!',
+            'title' => 'EQR',
+            'description' => 'description for EQR',
+            'resources' => 'html,css,sass,js,angularjs',
+        ));
+
+        PortfolioItem::create(array(
+            'title' => 'BMLM',
+            'description' => 'description for BMLM',
             'resources' => 'html,css,sass,js,angularjs',
         ));
 	}
