@@ -18,7 +18,7 @@ class PortfolioItemsTableSeeder extends Seeder {
 		// 	]);
 		// }
 
-        portfolioItem::create(array(
+        PortfolioItem::create(array(
             'title' => 'Passkeep',
             'description' => '  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt neque nisi nobis nemo, fugit cupiditate tempora incidunt magnam aperiam quidem consequatur, in repellendus molestiae vel est accusamus aut aspernatur, commodi!',
             'resources' => 'html,css,sass,js,angularjs',
