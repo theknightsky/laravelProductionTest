@@ -10,7 +10,7 @@ class PortfolioItemsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$Items =  portfolioItem::all();
+		$Items =  PortfolioItem::all();
 
 		// foreach($Items as $item){
 		// 	$item->resources = json_decode($item->resources);
@@ -28,7 +28,7 @@ class PortfolioItemsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$item = portfolioItem::findOrFail($id);
+		$item = PortfolioItem::findOrFail($id);
 
 		return $item;
 
