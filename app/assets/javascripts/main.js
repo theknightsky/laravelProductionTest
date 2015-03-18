@@ -32,7 +32,7 @@ app.controller('mainCtrl', ['$scope','Portfolio', function ($scope, Portfolio){
     Portfolio.getAll().success(function(data){
         $scope.portfolioItems = data;
 
-        console.log("html,css,js,angular".split(","));
+        console.log($scope.portfolioItems);
     });
 
 }]);
