@@ -7,13 +7,13 @@ head
     link(rel="stylesheet", href="assets/final.css")
 body(ng-app="app" ng-controller="mainCtrl")
     .box
-    div(ng-repeat="item in portfolioItems track by $index")
+    div(ng-repeat="item in portfolioItems")
         ul
             li
                 h1 {{item.title}}
                 p {{item.description}}
                 p(ng-repeat="resource in item.resources.split(',') track by $index")
-                    {{resource}}
+                    | {{resource}}
     H1 Hello!
     p  
         | Lorem ipsum dolor sit amet, consectetur

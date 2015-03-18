@@ -7,7 +7,7 @@
 </head>
 <body ng-app="app" ng-controller="mainCtrl">
   <div class="box"></div>
-  <div ng-repeat="item in portfolioItems track by $index">
+  <div ng-repeat="item in portfolioItems">
     <ul>
       <li>
         <h1>{{item.title}}</h1>
