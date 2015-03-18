@@ -19,10 +19,10 @@ app.config(['$stateProvider','$urlRouterProvider',function ($stateProvider,$urlR
 app.factory('Portfolio', ['$http', function ($http){
     return {
         getAll: function() {
-            return $http.get('../public/api/portfolioItems');
+            return $http.get('/api/portfolioItems');
         },
         getSingle: function(name) {
-            return $http.get('../public/api/portfolioItems/' + name);
+            return $http.get('/api/portfolioItems/' + name);
         }
     };
 }]);
